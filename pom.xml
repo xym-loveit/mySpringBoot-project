@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.xym.springboot</groupId>
+    <artifactId>mySpringBoot-project</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>springBoot-quickStart</module>
+    </modules>
+
+    <!--添加Spring Boot的父级依赖-->
+    <!--添加Spring Boot的父级依赖之后,这样当前项目就是Spring Boot项目了。spring-boot-starter-parent是一个特殊的starter,它用来提供相关的Maven默认依赖，使用它后，常用的包依赖可以省去version标签，关于Spring Boot提供了哪些jar包的依赖，可查看本地仓库下spring-boot-dependencies-1.4.5.RELEASE.pom文件的声明-->
+    <!-- <parent>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-parent</artifactId>
+         <version>1.4.5.RELEASE</version>
+         <relativePath/>
+     </parent>-->
+
+</project>
