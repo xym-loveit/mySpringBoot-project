@@ -1,7 +1,7 @@
 ### 一. 什么是Spring Boot
 随着动态语言的流行(Ruby,Groovy,Scala,Node.js)，Java的开发显得格外的笨重：繁多的配置，低下的开发效率，复杂的部署流程以及第三方技术集成难度大。
 
-在上述环境下，Spring Boot应运而生。它使用”习惯由于配置”(项目中存在大量的配置，此外还内置一个习惯性的配置，让你无须进行手动配置)的理念让你的项目快速运行起来。使用Spring Boot很容易创建一个独立运行(运行jar,内嵌Servlet容器)，准生产级别的Spring框架的项目，使用Spring Boot你可以不用或者只需要很少的Spring配置。
+在上述环境下，Spring Boot应运而生。它使用”习惯优于配置”(项目中存在大量的配置，此外还内置一个习惯性的配置，让你无须进行手动配置)的理念让你的项目快速运行起来。使用Spring Boot很容易创建一个独立运行(运行jar,内嵌Servlet容器)，准生产级别的Spring框架的项目，使用Spring Boot你可以不用或者只需要很少的Spring配置。
 
 ### 二. Spring Boot核心功能
 #### 1. 独立运行的Spring项目
@@ -12,7 +12,7 @@ Spring Boot可选择内嵌的Tomcat，Jetty或者Undertow，这样我们无须�
 
 #### 3. 提供starter简化Maven配置
 Spring提供了一系列的starter pom来简化Maven的依赖加载，例如，当你使用了spring-boot-starter-web时时，会自动加入如下图所示的依赖包。
-xxx
+![spring-boot-starter-web依赖包][001]
 
 #### 4. 自动配置Spring
 Spring Boot会根据在类路径中的jar包，类，为jar包里的类自动配置Bean，这样会极大地减少我们要使用的配置。当然，SpringBoot只是考虑了大多数的开发场景，并不是所有的场景，若在实际开发中我们需要自动配置Bean，而Spring Boot没有提供支持，则可以自定义配置，后面会有介绍。
@@ -33,3 +33,6 @@ Spring Boot提倡使用Java配置和注解配置组合，而Spring Boot不需要
 - (4) 提供运行时的应用监控；
 - (5) 极大的提高了开发，部署效率；
 - (6) 与云计算的天然集成。
+
+
+[001]:../springBoot-quickStart/src/main/resources/static/img/spring-boot-starter-web依赖包. "spring-boot-starter-web依赖包"

@@ -82,7 +82,7 @@ Spring Boot会自动扫描@SpringBootApplication所在类的同级包(如org.lig
 如果想把这个图案修改成自己的，步骤如下所示：
 
 (1). 在src/main/resources下新建一个banner.txt。
-(2). 通过http://patorjk.com/software/taag网站生成字符，如敲入的为"LONGJIAZUO",将网站生成的字符复制到banner.txt中。
+(2). 通过http://patorjk.com/software/taag网站生成字符，如敲入的为"xym-springboot",将网站生成的字符复制到banner.txt中。
 (3). 这时再启动程序，图案将变为如下图所示：
 
 ![springBoot-Banner-update][002]
