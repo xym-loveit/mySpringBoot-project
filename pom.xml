@@ -13,6 +13,10 @@
         <module>springBoot-xmlConfig</module>
         <module>springBoot-propertiesConfig</module>
         <module>springBoot-profileConfig</module>
+        <module>springBoot-aspectJAop</module>
+        <module>springBoot-velocity</module>
+        <module>springBoot-viewResolver</module>
+        <module>springBoot-outsideTomcat</module>
     </modules>
 
     <!--添加Spring Boot的父级依赖-->
