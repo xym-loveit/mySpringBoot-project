@@ -18,6 +18,7 @@
         <module>springBoot-viewResolver</module>
         <module>springBoot-outsideTomcat</module>
         <module>springBoot-tomcatConfig</module>
+        <module>springBoot-tomcatSSL</module>
     </modules>
 
     <!--添加Spring Boot的父级依赖-->
