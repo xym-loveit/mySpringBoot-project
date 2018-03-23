@@ -11,6 +11,8 @@
     <modules>
         <module>springBoot-quickStart</module>
         <module>springBoot-xmlConfig</module>
+        <module>springBoot-propertiesConfig</module>
+        <module>springBoot-profileConfig</module>
     </modules>
 
     <!--添加Spring Boot的父级依赖-->
