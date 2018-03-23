@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springBoot-quickStart</module>
+        <module>springBoot-xmlConfig</module>
     </modules>
 
     <!--添加Spring Boot的父级依赖-->
