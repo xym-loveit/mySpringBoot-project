@@ -19,6 +19,10 @@
         <module>springBoot-outsideTomcat</module>
         <module>springBoot-tomcatConfig</module>
         <module>springBoot-tomcatSSL</module>
+        <module>springBoot-thymeleaf01</module>
+        <module>springBoot-RestfulApi</module>
+        <module>springBoot-JdbcTemplate</module>
+        <module>springBoot-dataJpa</module>
     </modules>
 
     <!--添加Spring Boot的父级依赖-->
