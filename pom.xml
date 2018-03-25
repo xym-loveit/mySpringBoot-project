@@ -36,6 +36,7 @@
         <module>springBoot-async</module>
         <module>springBoot-log4j</module>
         <module>springBoot-aspectJAop02</module>
+        <module>springBoot-transaction</module>
     </modules>
 
     <!--添加Spring Boot的父级依赖-->
