@@ -7,13 +7,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springBoot-aspectJAop</artifactId>
+    <artifactId>springBoot-aspectJAop02</artifactId>
     <packaging>jar</packaging>
 
-    <name>springBoot-aspectJAop</name>
+    <name>springBoot-aspectJAop02</name>
     <url>http://maven.apache.org</url>
-
-    <description>Spring Boot AOP</description>
 
     <dependencyManagement>
         <dependencies>
@@ -32,19 +30,46 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!--排除默认的logback-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--将logback换为log4j2日志框架-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+        <!--aspect aop切面-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
     </dependencies>
 
-
     <build>
         <plugins>
+            <!--maven编译插件-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <target>${jdk.version}</target>
+                    <source>${jdk.version}</source>
+                    <encoding>${maven.compiler.encoding}</encoding>
+                </configuration>
+            </plugin>
             <!--spring boot maven插件-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.4.5.RELEASE</version>
                 <executions>
                     <execution>
                         <goals>
@@ -55,6 +80,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
