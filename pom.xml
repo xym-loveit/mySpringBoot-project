@@ -42,6 +42,8 @@
         <module>springBoot-cacheWithRedis</module>
         <module>springBoot-mybatis01</module>
         <module>springBoot-mybatis02</module>
+        <module>springBoot-rabbitMq</module>
+        <module>springBoot-StateMachine</module>
     </modules>
 
     <!--添加Spring Boot的父级依赖-->
