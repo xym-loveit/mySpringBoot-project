@@ -3,8 +3,8 @@
 # Compiled class file
 *.class
 
-.idea
-**iml
+#.idea
+#**iml
 
 #**target
 # Log file

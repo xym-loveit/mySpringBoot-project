@@ -38,6 +38,10 @@
         <module>springBoot-aspectJAop02</module>
         <module>springBoot-transaction</module>
         <module>springBoot-sendMail</module>
+        <module>springBoot-cacheWithEhcache</module>
+        <module>springBoot-cacheWithRedis</module>
+        <module>springBoot-mybatis01</module>
+        <module>springBoot-mybatis02</module>
     </modules>
 
     <!--添加Spring Boot的父级依赖-->
