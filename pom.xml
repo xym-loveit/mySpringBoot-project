@@ -44,6 +44,7 @@
         <module>springBoot-mybatis02</module>
         <module>springBoot-rabbitMq</module>
         <module>springBoot-StateMachine</module>
+        <module>springBoot-actuator</module>
     </modules>
 
     <!--添加Spring Boot的父级依赖-->

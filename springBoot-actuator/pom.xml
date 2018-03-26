@@ -7,17 +7,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springBoot-quickStart</artifactId>
+    <artifactId>springBoot-actuator</artifactId>
     <packaging>jar</packaging>
 
-    <name>springBoot-quickStart</name>
+    <name>springBoot-actuator</name>
     <url>http://maven.apache.org</url>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
-    <!--本项目中已有parent，没办法再指定parent，此时采用这种方法解决-->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -31,10 +26,13 @@
     </dependencyManagement>
 
     <dependencies>
-        <!--添加Web支持的starter pom-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 
@@ -49,7 +47,6 @@
                     <encoding>${maven.compiler.encoding}</encoding>
                 </configuration>
             </plugin>
-            <!--添加Spring Boot的编译插件-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -64,5 +61,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
