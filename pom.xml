@@ -45,6 +45,8 @@
         <module>springBoot-rabbitMq</module>
         <module>springBoot-StateMachine</module>
         <module>springBoot-actuator</module>
+        <module>springBoot-1.5-changeLoggerLevel</module>
+        <module>springBoot-useActuatorGetGitInfo</module>
     </modules>
 
     <!--添加Spring Boot的父级依赖-->
