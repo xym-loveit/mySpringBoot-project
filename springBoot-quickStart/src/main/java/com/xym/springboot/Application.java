@@ -1,6 +1,5 @@
 package com.xym.springboot;
 
-import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
@@ -24,7 +23,7 @@ public class Application {
         springApplication.setBannerMode(Banner.Mode.OFF);
         springApplication.run(args);*/
 
-        new SpringApplicationBuilder(Application.class).bannerMode(Banner.Mode.OFF).run(args);
+        new SpringApplicationBuilder(Application.class).run(args);
 
     }
 }
