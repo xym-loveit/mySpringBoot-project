@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--使用th前缀使用thymeleaf-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" content="text/html"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale-1"/>
+
+    <!--采用@{}引用web静态资源-->
+    <link th:href="@{bootstrap/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{bootstrap/bootstrap-theme.min.css}" rel="stylesheet"/>
+    <title>thymeleaf使用</title>
+</head>
+<body>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">访问model</h3>
+    </div>
+    <div class="panel-body">
+        <!--采用${}访问model中的数据-->
+        <span th:text="${singlePerson.name}"></span>
+    </div>
+</div>
+
+<!--${not #lists.isEmpty(people)}判断people是否为空-->
+<div th:if="${not #lists.isEmpty(people)}">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">列表</h3>
+        </div>
+    </div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <!--使用each来迭代元素person-->
+            <li class="list-group-item" th:each="person:${people}">
+                <span th:text="${person.name}"></span>
+                <span th:text="${person.age}"></span>
+                <button class="btn" th:onclick="'getName(\''+${person.name}+'\')'">获得名字</button>
+            </li>
+        </ul>
+    </div>
+</div>
+<script th:src="@{jquery-3.3.1.min.js}" type="text/javascript"></script>
+<script th:src="@{bootstrap/bootstrap.min.js}" type="text/javascript"></script>
+<!--javascript中访问model属性-->
+<script th:inline="javascript">
+    var single = [[${singlePerson}]];
+    console.log(single.name + "--" + single.age);
+
+    function getName(name) {
+        console.log(name);
+    }
+</script>
+</body>
+</html>
